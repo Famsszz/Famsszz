@@ -4,27 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RegEx</title>
-    <link rel="stylesheet" href="../tailwind-components/style/output.css">
-
+    <title>RegEx Validation</title>
+    <!-- <link rel="stylesheet" href="../tailwind-components/style/output.css"> -->
 </head>
 
 <body>
-        <p>Syarat Valid = minimal 8 character</p>
-
+    <section>
+        <!-- Box Input Pertama -->
         <div class="relative w-full">
-            
-            <label for="regexLabel">Your username </label><br>
-            <input id="regexInputfarhan" type="text" name="regexInput" placeholder="RegExp" value=""/>
-
-            <p>
-                <small>
-                    <span id="validation-text-farhan">Validation message.</span>
-                </small>
-            </p>
+            <label for="regexInputfarhan">Regex Pertama: Minimal 8 karakter, kombinasi huruf, angka, dan karakter khusus</label><br>
+            <input id="regexInputfarhan" type="text" placeholder="Masukkan input regex"/>
+            <p><small><span id="validation-text-farhan">Validation message.</span></small></p>
         </div>
 
+        <!-- Box Input Kedua -->
+        <div class="relative w-full">
+            <label for="regexInputfarhan2">Regex Kedua: Minimal 12 karakter, harus huruf kecil semua</label><br>
+            <input id="regexInputfarhan2" type="text" placeholder="Masukkan input regex" />
+            <p><small><span id="validation-text-farhan2">Validation message.</span></small></p>
+        </div>
 
+        <!-- Box Input Ketiga -->
+        <div class="relative w-full">
+            <label for="regexInputfarhan3">Regex Ketiga: Minimal 4 karakter, maksimal 8 karakter, hanya angka</label><br>
+            <input id="regexInputfarhan3" type="text" placeholder="Masukkan input regex"/>
+            <p><small><span id="validation-text-farhan3">Validation message.</span></small></p>
+        </div>
+
+        <!-- Box Input Keempat -->
+        <div class="relative w-full">
+            <label for="regexInputfarhan4">Regex Keempat: Minimal 12 karakter, memiliki setidaknya satu huruf kapital, satu huruf kecil, satu angka, satu karakter khusus</label><br>
+            <input id="regexInputfarhan4" type="text" placeholder="Masukkan input regex"/>
+            <p><small><span id="validation-text-farhan4">Validation message.</span></small></p>
+        </div>
+
+        <!-- Box Input Kelima -->
+        <div class="relative w-full">
+            <label for="regexInputfarhan5">Regex Kelima: Hanya menerima angka sebanyak 6 karakter dan angka semua</label><br>
+            <input id="regexInputfarhan5" type="text" placeholder="Masukkan input regex"/>
+            <p><small><span id="validation-text-farhan5">Validation message.</span></small></p>
+        </div>
     </section>
 
     <script src="script.js"></script>
